@@ -7,898 +7,179 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>FlowApp</title>
+    <title>Project Workspace</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <script>
-
-        tailwind.config = {
-
-            theme: {
-
-                extend: {
-
-                    keyframes: {
-
-                        float: {
-                            "0%,100%": {
-                                transform: "translateY(0px)"
-                            },
-                            "50%": {
-                                transform: "translateY(-15px)"
-                            }
-                        },
-
-                        slideUp: {
-                            from: {
-                                opacity: "0",
-                                transform: "translateY(30px)"
-                            },
-                            to: {
-                                opacity: "1",
-                                transform: "translateY(0)"
-                            }
-                        },
-
-                        glow: {
-                            "0%,100%": {
-                                boxShadow: "0 0 15px #3b82f6"
-                            },
-                            "50%": {
-                                boxShadow: "0 0 30px #8b5cf6"
-                            }
-                        }
-
-                    },
-
-                    animation: {
-
-                        float: "float 4s ease-in-out infinite",
-
-                        slideUp: "slideUp 1s ease forwards",
-
-                        glow: "glow 2s ease-in-out infinite"
-
-                    }
-
-                }
-
-            }
-
-        }
-
-    </script>
-
 </head>
 
-<body class="bg-slate-950 text-white overflow-x-hidden">
-
-    <!-- Background -->
-
-    <div class="fixed inset-0 -z-20">
-
-        <div
-            class="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:40px_40px]">
-        </div>
-
-        <div class="absolute top-20 left-20 w-72 h-72 rounded-full bg-cyan-500 opacity-20 blur-3xl animate-float"></div>
-
-        <div class="absolute bottom-20 right-20 w-72 h-72 rounded-full bg-purple-600 opacity-20 blur-3xl animate-float">
-        </div>
-
-    </div>
+<body class="bg-white">
 
     <!-- Navbar -->
 
-    <nav class="fixed top-0 left-0 w-full z-50">
+    <nav class="border-b">
 
-        <div
-            class="max-w-7xl mx-auto mt-5 px-6 py-4 flex justify-between items-center rounded-2xl bg-white/10 backdrop-blur-lg border border-white/10">
+        <div class="max-w-6xl mx-auto flex justify-between items-center p-5">
 
-            <div class="flex items-center gap-3">
+            <h1 class="text-xl font-bold">
+                + Project
+            </h1>
 
-                <div
-                    class="w-10 h-10 rounded-xl bg-gradient-to-r from-cyan-500 to-purple-600 flex items-center justify-center font-bold">
+            <ul class="flex gap-6">
 
-                    ✦
+                <li>
+                    <a href="#" class="text-gray-600 hover:text-black">
+                        Product
+                    </a>
+                </li>
 
-                </div>
+                <li>
+                    <a href="#" class="text-gray-600 hover:text-black">
+                        Solutions
+                    </a>
+                </li>
 
-                <h2 class="text-xl font-bold">
+                <li>
+                    <a href="#" class="text-gray-600 hover:text-black">
+                        Resources
+                    </a>
+                </li>
 
-                    FlowApp
+                <li>
+                    <a href="#" class="text-gray-600 hover:text-black">
+                        Pricing
+                    </a>
+                </li>
 
-                </h2>
-
-            </div>
-
-            <ul class="hidden md:flex gap-8">
-
-                <li><a href="#" class="hover:text-cyan-400">Features</a></li>
-
-                <li><a href="#" class="hover:text-cyan-400">Pricing</a></li>
-
-                <li><a href="#" class="hover:text-cyan-400">Reviews</a></li>
+                <li>
+                    <a href="#" class="font-semibold">
+                        Log in
+                    </a>
+                </li>
 
             </ul>
 
-            <button
-                class="hidden md:block px-6 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-purple-600 animate-glow">
-
-                Get Started
-
+            <button class="bg-black text-white px-4 py-2 rounded">
+                Get AI Free
             </button>
-
-            <div class="md:hidden text-3xl">
-
-                ☰
-
-            </div>
 
         </div>
 
     </nav>
 
-    <!-- Hero -->
+    <!-- Hero Section -->
 
-    <section class="min-h-screen flex items-center">
+    <section class="bg-gradient-to-br from-orange-100 to-white py-12">
 
-        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+        <div class="max-w-6xl mx-auto px-6 text-center">
 
-            <div>
+            <h1 class="text-5xl font-bold">
 
-                <span class="inline-block px-4 py-2 rounded-full bg-white/10 border border-white/20 animate-slideUp">
+                Write, plan, share.<br>
 
-                    🚀 Now with AI-powered features
+                With AI at your side.
 
-                </span>
+            </h1>
 
-                <h1 class="text-5xl md:text-6xl font-bold mt-8 animate-slideUp">
+            <p class="text-gray-600 mt-5">
 
-                    Build products
+                It is the connected workspace where better,
+                faster work happens. Now with AI.
 
-                    <br>
+            </p>
 
-                    <span class="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+            <div class="mt-6">
 
-                        users love
+                <button class="bg-black text-white px-5 py-2 rounded">
 
-                    </span>
+                    Get AI Free →
 
-                </h1>
+                </button>
 
-                <p class="text-gray-400 mt-6 leading-8">
+                <button class="bg-blue-600 text-white px-5 py-2 rounded ml-3 hover:bg-blue-700">
 
-                    The all-in-one platform that helps your team build,
-                    collaborate and launch products faster using AI-powered
-                    automation, real-time collaboration and advanced analytics.
-                </p>
+                    Request a Demo
 
-                <div class="flex gap-4 mt-8">
-
-                    <button class="px-7 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-purple-600 hover:scale-105 transition animate-glow">
-
-                        Start Free Trial
-
-                    </button>
-
-                    <button class="px-7 py-3 rounded-xl border border-white/20 hover:scale-105 transition">
-
-                        Schedule Demo
-
-                    </button>
-
-                </div>
-                 <div class="group flex items-center gap-5 mt-10 animate-slideUp">
-                
-                    <!-- User Images -->
-                
-                    <div class="flex -space-x-3">
-                
-                        <img src="https://i.pravatar.cc/40?img=12"
-                            class="w-10 h-10 rounded-full border-2 border-slate-900 transition-all duration-300 hover:-translate-y-2 hover:scale-110 hover:rotate-6 hover:z-20 cursor-pointer">
-                
-                        <img src="https://i.pravatar.cc/40?img=22"
-                            class="w-10 h-10 rounded-full border-2 border-slate-900 transition-all duration-300 delay-75 hover:-translate-y-2 hover:scale-110 hover:-rotate-6 hover:z-20 cursor-pointer">
-                
-                        <img src="https://i.pravatar.cc/40?img=32"
-                            class="w-10 h-10 rounded-full border-2 border-slate-900 transition-all duration-300 delay-150 hover:-translate-y-2 hover:scale-110 hover:rotate-6 hover:z-20 cursor-pointer">
-                
-                    </div>
-                
-                    <!-- Rating -->
-                
-                    <div>
-                
-                        <p class="text-yellow-400 text-lg ">
-                
-                            ★★★★★
-                
-                        </p>
-                
-                        <p class="text-sm text-gray-400 ">
-                
-                            Trusted by
-                            <span class="font-bold text-cyan-400 ">
-                                2,000+
-                            </span>
-                            teams worldwide
-                
-                        </p>
-                
-                    </div>
-                
-                </div>
-
+                </button>
 
             </div>
-                        <!-- Right Side -->
-                        
-                        <div class="relative">
-                        
-                            <!-- Dashboard -->
-                        
-                            <div class="bg-white/10 backdrop-blur-lg border border-white/20 rounded-3xl p-5">
-                        
-                                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900" alt="Dashboard"
-                                    class="rounded-2xl w-full h-80 object-cover">
-                        
-                            </div>
-                        
-                            <!-- Growth Card -->
-                        
-                            <div
-                                class="absolute -top-5 -right-6 bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl p-4 animate-float">
-                        
-                                <div class="flex items-center gap-3">
-                        
-                                    <div class="w-10 h-10 rounded-full bg-green-500 flex items-center justify-center">
-                        
-                                        📈
-                        
-                                    </div>
-                        
-                                    <div>
-                        
-                                        <h3 class="font-bold">
-                        
-                                            +127%
-                        
-                                        </h3>
-                        
-                                        <p class="text-xs text-gray-300">
-                        
-                                            Growth
-                        
+
+            <div class="relative flex justify-center mt-12">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF_YSeUKi76DvzXcUV4qzlH9ADDWVFTKN_55sW3XGwsg&s=10"
+                    alt="Workspace" class="w-[650px] rounded-lg shadow">
+                                    <!-- Left Card -->
+                                    
+                                    <div class="absolute left-0 top-16 bg-white border rounded-lg p-4 shadow w-44 hover:shadow-lg transition">
+                                    
+                                        <p class="font-semibold">
+                                            ✅ Tasks
                                         </p>
-                        
-                                    </div>
-                        
-                                </div>
-                        
-                            </div>
-                        
-                            <!-- Task Card -->
-                        
-                            <div
-                                class="absolute bottom-6 left-4 bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl p-4 animate-float">
-                        
-                                <div class="flex items-center gap-3">
-                        
-                                    <div class="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center">
-                        
-                                        ✓
-                        
-                                    </div>
-                        
-                                    <div>
-                        
-                                        <h3 class="font-semibold">
-                        
-                                            Task Completed
-                        
-                                        </h3>
-                        
-                                        <p class="text-xs text-gray-300">
-                        
-                                            Just now
-                        
+                                    
+                                        <p class="text-sm text-gray-500 mt-2">
+                                            12 tasks completed today
                                         </p>
-                        
+                                    
                                     </div>
-                        
-                                </div>
-                        
-                            </div>
-                        
-                            <!-- Online Card -->
-                        
-                            <div
-                                class="absolute top-1/2 -right-8 -translate-y-1/2 bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl p-4 animate-float">
-                        
-                                <div class="flex items-center gap-3">
-                        
-                                    <div class="flex -space-x-2">
-                        
-                                        <div class="w-4 h-4 rounded-full bg-pink-500 border border-white"></div>
-                        
-                                        <div class="w-4 h-4 rounded-full bg-blue-500 border border-white"></div>
-                        
-                                        <div class="w-4 h-4 rounded-full bg-purple-500 border border-white"></div>
-                        
-                                    </div>
-                        
-                                    <p class="text-sm">
-                        
-                                        +24 Online
-                        
-                                    </p>
-                        
-                                </div>
-                        
-                            </div>
-                        
-                        </div>
-                        
-                        </div>
-                        
-                        <!-- Scroll -->
-                        
-                        <div class="absolute bottom-8 left-1/2 -translate-x-1/2">
-                        
-                            <div class="flex flex-col items-center">
-                        
-                                <span class="text-sm mb-2">
-                        
-                                    Scroll
-                        
-                                </span>
-                        
-                                <div class="w-6 h-10 border border-white rounded-full flex justify-center">
-                        
-                                    <div class="w-1 h-2 bg-white rounded-full mt-2 animate-bounce">
-                        
-                                    </div>
-                        
-                                </div>
-                        
-                            </div>
-                        
-                        </div>
-                        
-                        </section>
-                        <!-- FEATURES -->
-                        
-                        <section class="py-24 px-6">
-                        
-                            <div class="max-w-7xl mx-auto">
-                        
-                                <div class="text-center mb-16">
-                        
-                                    <h2 class="text-5xl font-bold">
-                        
-                                        Powerful Features
-                        
-                                    </h2>
-                        
-                                    <p class="text-gray-400 mt-4">
-                        
-                                        Everything you need to build better products with AI.
-                        
-                                    </p>
-                        
-                                </div>
-                        
-                                <div class="grid md:grid-cols-3 gap-6">
-                        
-                                    <!-- Large Card -->
-                        
-                                    <div
-                                        class="md:col-span-2 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 border border-white/10 rounded-3xl p-8 hover:scale-105 transition">
-                        
-                                        <div class="text-5xl">
-                        
-                                            🤖
-                        
-                                        </div>
-                        
-                                        <h3 class="text-2xl font-bold mt-6">
-                        
-                                            AI-Powered Automation
-                        
-                                        </h3>
-                        
-                                        <p class="text-gray-300 mt-4 leading-7">
-                        
-                                            Automate repetitive work and let AI help your team finish projects faster.
-                        
+                                    
+                                    <!-- Right Top Card -->
+                                    
+                                    <div class="absolute right-0 top-8 bg-white border rounded-lg p-4 shadow w-44 hover:shadow-lg transition">
+                                    
+                                        <p class="font-semibold">
+                                            ✔ Project Status
                                         </p>
-                        
+                                    
+                                        <p class="text-green-600 mt-2">
+                                            On Track
+                                        </p>
+                                    
                                     </div>
-                        
-                                    <!-- Card -->
-                        
-                                    <div class="bg-white/10 backdrop-blur-lg border border-white/10 rounded-3xl p-6 hover:scale-105 transition">
-                        
-                                        <div class="text-4xl">⚡</div>
-                        
-                                        <h3 class="text-xl font-semibold mt-4">
-                        
-                                            Lightning Fast
-                        
-                                        </h3>
-                        
-                                        <p class="text-gray-400 mt-3">
-                        
-                                            Fast performance for every project.
-                        
+                                    
+                                    <!-- Right Bottom Card -->
+                                    
+                                    <div class="absolute right-0 bottom-8 bg-white border rounded-lg p-4 shadow w-52 hover:shadow-lg transition">
+                                    
+                                        <p class="font-semibold">
+                                            Team Activity
                                         </p>
-                        
-                                    </div>
-                        
-                                    <!-- Card -->
-                        
-                                    <div class="bg-white/10 backdrop-blur-lg border border-white/10 rounded-3xl p-6 hover:scale-105 transition">
-                        
-                                        <div class="text-4xl">🔒</div>
-                        
-                                        <h3 class="text-xl font-semibold mt-4">
-                        
-                                            Bank-Level Security
-                        
-                                        </h3>
-                        
-                                        <p class="text-gray-400 mt-3">
-                        
-                                            Your data stays safe with secure storage.
-                        
-                                        </p>
-                        
-                                    </div>
-                        
-                                    <!-- Card -->
-                        
-                                    <div class="bg-white/10 backdrop-blur-lg border border-white/10 rounded-3xl p-6 hover:scale-105 transition">
-                        
-                                        <div class="text-4xl">📊</div>
-                        
-                                        <h3 class="text-xl font-semibold mt-4">
-                        
-                                            Advanced Analytics
-                        
-                                        </h3>
-                        
-                                        <p class="text-gray-400 mt-3">
-                        
-                                            Track progress with detailed reports.
-                        
-                                        </p>
-                        
-                                    </div>
-                        
-                                    <!-- Card -->
-                        
-                                    <div class="bg-white/10 backdrop-blur-lg border border-white/10 rounded-3xl p-6 hover:scale-105 transition">
-                        
-                                        <div class="text-4xl">🔄</div>
-                        
-                                        <h3 class="text-xl font-semibold mt-4">
-                        
-                                            Real-time Sync
-                        
-                                        </h3>
-                        
-                                        <p class="text-gray-400 mt-3">
-                        
-                                            Work together from anywhere instantly.
-                        
-                                        </p>
-                        
-                                    </div>
-                        
-                                    <!-- Card -->
-                        
-                                    <div class="bg-white/10 backdrop-blur-lg border border-white/10 rounded-3xl p-6 hover:scale-105 transition">
-                        
-                                        <div class="text-4xl">👥</div>
-                        
-                                        <h3 class="text-xl font-semibold mt-4">
-                        
-                                            Team Collaboration
-                        
-                                        </h3>
-                        
-                                        <p class="text-gray-400 mt-3">
-                        
-                                            Collaborate with your team in one workspace.
-                        
-                                        </p>
-                        
-                                    </div>
-                        
-                                </div>
-                        
-                            </div>
-                        
-                        </section>
-                        <!-- TESTIMONIALS -->
-                        
-                        <section class="py-24 px-6">
-                        
-                            <div class="max-w-7xl mx-auto">
-                        
-                                <div class="text-center mb-16">
-                        
-                                    <h2 class="text-5xl font-bold">
-                        
-                                        What Our Customers Say
-                        
-                                    </h2>
-                        
-                                    <p class="text-gray-400 mt-4">
-                        
-                                        Teams around the world use FlowApp to improve their work.
-                        
-                                    </p>
-                        
-                                </div>
-                        
-                                <div class="grid md:grid-cols-3 gap-8">
-                        
-                                    <!-- Card 1 -->
-                        
-                                    <div class="bg-white/10 backdrop-blur-lg border border-white/10 rounded-3xl p-6 hover:scale-105 transition">
-                        
-                                        <p class="text-yellow-400 text-xl">
-                        
-                                            ★★★★★
-                        
-                                        </p>
-                        
-                                        <p class="text-gray-300 mt-4 leading-7">
-                        
-                                            FlowApp helped our team organize projects better.
-                                            Everything is now faster and easier.
-                        
-                                        </p>
-                        
-                                        <div class="flex items-center mt-6">
-                        
-                                            <img src="https://i.pravatar.cc/60?img=15" class="w-14 h-14 rounded-full">
-                        
-                                            <div class="ml-4">
-                        
-                                                <h4 class="font-semibold">
-                        
-                                                    Sophia Miller
-                        
-                                                </h4>
-                        
-                                                <p class="text-sm text-gray-400">
-                        
-                                                    Product Manager
-                        
-                                                </p>
-                        
+                                    
+                                        <div class="flex items-center mt-3">
+                                    
+                                            <div class="flex -space-x-2">
+                                    
+                                                <div class="w-8 h-8 rounded-full bg-red-300 border-2 border-white"></div>
+                                    
+                                                <div class="w-8 h-8 rounded-full bg-blue-300 border-2 border-white"></div>
+                                    
+                                                <div class="w-8 h-8 rounded-full bg-green-300 border-2 border-white"></div>
+                                    
                                             </div>
-                        
+                                    
+                                            <span class="text-sm text-gray-500 ml-3">
+                                                +5 Online
+                                            </span>
+                                    
                                         </div>
-                        
+                                    
                                     </div>
-                        
-                                    <!-- Card 2 -->
-                        
-                                    <div
-                                        class="bg-white/10 backdrop-blur-lg border border-white/10 rounded-3xl p-6 md:-mt-8 hover:scale-105 transition">
-                        
-                                        <p class="text-yellow-400 text-xl">
-                        
-                                            ★★★★★
-                        
-                                        </p>
-                        
-                                        <p class="text-gray-300 mt-4 leading-7">
-                        
-                                            The AI features save us a lot of time every day.
-                                            The interface is simple and clean.
-                        
-                                        </p>
-                        
-                                        <div class="flex items-center mt-6">
-                        
-                                            <img src="https://i.pravatar.cc/60?img=32" class="w-14 h-14 rounded-full">
-                        
-                                            <div class="ml-4">
-                        
-                                                <h4 class="font-semibold">
-                        
-                                                    James Wilson
-                        
-                                                </h4>
-                        
-                                                <p class="text-sm text-gray-400">
-                        
-                                                    CEO
-                        
-                                                </p>
-                        
-                                            </div>
-                        
-                                        </div>
-                        
+                                    
                                     </div>
-                        
-                                    <!-- Card 3 -->
-                        
-                                    <div class="bg-white/10 backdrop-blur-lg border border-white/10 rounded-3xl p-6 hover:scale-105 transition">
-                        
-                                        <p class="text-yellow-400 text-xl">
-                        
-                                            ★★★★★
-                        
-                                        </p>
-                        
-                                        <p class="text-gray-300 mt-4 leading-7">
-                        
-                                            Real-time collaboration makes it easy for our
-                                            remote team to work together.
-                        
-                                        </p>
-                        
-                                        <div class="flex items-center mt-6">
-                        
-                                            <img src="https://i.pravatar.cc/60?img=45" class="w-14 h-14 rounded-full">
-                        
-                                            <div class="ml-4">
-                        
-                                                <h4 class="font-semibold">
-                        
-                                                    Emma Johnson
-                        
-                                                </h4>
-                        
-                                                <p class="text-sm text-gray-400">
-                        
-                                                    UI Designer
-                        
-                                                </p>
-                        
-                                            </div>
-                        
-                                        </div>
-                        
+                                    
                                     </div>
-                        
-                                </div>
-                        
-                            </div>
-                        
-                        </section>
-                        <!-- CALL TO ACTION -->
-                        
-                        <section class="py-24 px-6 relative overflow-hidden">
-                        
-                            <!-- Background Glow -->
-                        
-                            <div class="absolute inset-0 bg-gradient-to-r from-cyan-600/20 to-purple-600/20"></div>
-                        
-                            <div class="absolute top-10 left-20 w-40 h-40 bg-cyan-500 rounded-full blur-3xl opacity-20 animate-float"></div>
-                        
-                            <div class="absolute bottom-10 right-20 w-52 h-52 bg-purple-500 rounded-full blur-3xl opacity-20 animate-float">
-                            </div>
-                        
-                            <div class="relative max-w-4xl mx-auto text-center">
-                        
-                                <h2 class="text-5xl font-bold">
-                        
-                                    Ready to transform your workflow?
-                        
-                                </h2>
-                        
-                                <p class="text-gray-400 mt-6 leading-8">
-                        
-                                    Join thousands of teams already using FlowApp to build
-                                    better products faster with AI.
-                        
-                                </p>
-                        
-                                <div class="flex justify-center gap-5 mt-10 flex-wrap">
-                        
-                                    <button
-                                        class="px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 to-purple-600 hover:scale-105 transition">
-                        
-                                        Start Free Trial
-                        
-                                    </button>
-                        
-                                    <button class="px-8 py-4 rounded-xl border border-white/20 hover:bg-white/10 transition">
-                        
-                                        Schedule Demo
-                        
-                                    </button>
-                        
-                                </div>
-                        
-                                <p class="text-sm text-gray-500 mt-6">
-                        
-                                    No credit card required • 14-day free trial
-                        
-                                </p>
-                        
-                            </div>
-                        
-                        </section>
-                        
-                        <!-- FOOTER -->
-                        
-                        <footer class="border-t border-white/10 py-16 px-6">
-                        
-                            <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-10">
-                        
-                                <!-- Logo -->
-                        
-                                <div>
-                        
-                                    <div class="flex items-center gap-3">
-                        
-                                        <div
-                                            class="w-10 h-10 rounded-xl bg-gradient-to-r from-cyan-500 to-purple-600 flex items-center justify-center">
-                        
-                                            ✦
-                        
-                                        </div>
-                        
-                                        <h2 class="text-2xl font-bold">
-                        
-                                            FlowApp
-                        
-                                        </h2>
-                        
+                                    
+                                    </section>
+                                    
+                                    <div class="fixed bottom-6 right-6">
+                                    
+                                        <button class="bg-black text-white w-12 h-12 rounded-full shadow hover:bg-gray-800 transition">
+                                    
+                                            💬
+                                    
+                                        </button>
+                                    
                                     </div>
-                        
-                                    <p class="text-gray-400 mt-5 leading-7">
-                        
-                                        Build better products with AI-powered automation,
-                                        collaboration and analytics.
-                        
-                                    </p>
-                        
-                                </div>
-                        
-                                <!-- Product -->
-                        
-                                <div>
-                        
-                                    <h3 class="font-semibold mb-5">
-                        
-                                        Product
-                        
-                                    </h3>
-                        
-                                    <ul class="space-y-3 text-gray-400">
-                        
-                                        <li><a href="#" class="hover:text-cyan-400">Features</a></li>
-                        
-                                        <li><a href="#" class="hover:text-cyan-400">Pricing</a></li>
-                        
-                                        <li><a href="#" class="hover:text-cyan-400">Updates</a></li>
-                        
-                                        <li><a href="#" class="hover:text-cyan-400">Integrations</a></li>
-                        
-                                    </ul>
-                        
-                                </div>
-                        
-                                <!-- Company -->
-                        
-                                <div>
-                        
-                                    <h3 class="font-semibold mb-5">
-                        
-                                        Company
-                        
-                                    </h3>
-                        
-                                    <ul class="space-y-3 text-gray-400">
-                        
-                                        <li><a href="#" class="hover:text-cyan-400">About</a></li>
-                        
-                                        <li><a href="#" class="hover:text-cyan-400">Careers</a></li>
-                        
-                                        <li><a href="#" class="hover:text-cyan-400">Blog</a></li>
-                        
-                                        <li><a href="#" class="hover:text-cyan-400">Contact</a></li>
-                        
-                                    </ul>
-                        
-                                </div>
-                        
-                                <!-- Legal -->
-                        
-                                <div>
-                        
-                                    <h3 class="font-semibold mb-5">
-                        
-                                        Legal
-                        
-                                    </h3>
-                        
-                                    <ul class="space-y-3 text-gray-400">
-                        
-                                        <li><a href="#" class="hover:text-cyan-400">Privacy Policy</a></li>
-                        
-                                        <li><a href="#" class="hover:text-cyan-400">Terms</a></li>
-                        
-                                        <li><a href="#" class="hover:text-cyan-400">Cookies</a></li>
-                        
-                                        <li><a href="#" class="hover:text-cyan-400">Support</a></li>
-                        
-                                    </ul>
-                        
-                                </div>
-                        
-                            </div>
-                        
-                            <!-- Bottom -->
-                        
-                            <div
-                                class="max-w-7xl mx-auto mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center">
-                        
-                                <p class="text-gray-400 text-sm">
-                        
-                                    © 2026 FlowApp. All rights reserved.
-                        
-                                </p>
-                        
-                                <div class="flex gap-4 mt-5 md:mt-0">
-                        
-                                    <a href="#"
-                                        class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-cyan-500 transition">
-                        
-                                        🌐
-                        
-                                    </a>
-                        
-                                    <a href="#"
-                                        class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-blue-500 transition">
-                        
-                                        💼
-                        
-                                    </a>
-                        
-                                    <a href="#"
-                                        class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-pink-500 transition">
-                        
-                                        📷
-                        
-                                    </a>
-                        
-                                    <a href="#"
-                                        class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-gray-600 transition">
-                        
-                                        💻
-                        
-                                    </a>
-                        
-                                </div>
-                        
-                            </div>
-                        
-                        </footer>
-                        
-                        <!-- CHAT BUTTON -->
-                        
-                        <div class="fixed bottom-6 right-6">
-                        
-                            <button class="w-16 h-16 rounded-full bg-gradient-to-r from-cyan-500 to-purple-600 text-2xl animate-pulse">
-                        
-                                💬
-                        
-                            </button>
-                        
-                        </div>
-                        
-                        </body>
-                        
-                        </html>
+                                    
+                                    </body>
+                                    
+                                    </html>
